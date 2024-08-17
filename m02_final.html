@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>M02_FINAL</title>
+
+    <!-- ---------- Bootstrap ---------- -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <!-- ---------- Static CSS ---------- -->
+     <link rel="stylesheet" href="./assets/css/style.css">
+     <!-- ---------- JQuery ---------- -->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <!-- ---------- Roboto Font ---------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+<!-- ---------- Aca comienza el header y menu ---------- -->
+</head>
+<body>
+    <header class="bg-primary">
+        <h1>Contacto</h1>
+        <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">BootCamp</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pagina 1</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Pagina 2</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active">Contacto</a>
+                    </li>
+                    </ul>
+                </div>
+            </div>
+          </nav>
+    </header>
+<!-- ---------- Aca comienza el contenido de la pagina ---------- -->
+<main>
+    <div class="row">
+        <div class="col-md-6">
+            <form action="" id="contactForm">
+                <h2>Formulario de Contacto</h2>
+                <div class="form-group">
+                    <label for="name">Nombre: </label>
+                    <input type="text" name="name" id="name" placeholder="Juanito Perez" required>
+                </div>
+                <div class="form-group">
+                    <label for="">Correo Electronico: </label>
+                    <input type="email" name="email" id="email" placeholder="ejemplo@mail.com">
+                </div>
+                <div class="form-group">
+                    <label for="">Mensaje</label>
+                    <textarea name="message" id="message" rows="4" placeholder="Deja tu mensaje..."></textarea>
+                </div>
+                <div class="form-group">
+                    <button type="submit" class="btn">Enviar</button>
+                </div>
+            </form>
+            <div class="alert alert-danger d-none" id="errorAlert" role="alert">
+                *Todos los campos son obligatorios.
+            </div>
+        </div>
+        <div class="col-md-6">
+            <h2>Resumen de Informacion</h2>
+            <div class="card" id="summary">
+                <div class="card-body">
+                    <p><strong>Nombre: </strong><span id="summaryName"></span></p>
+                    <p><strong>Correo Electronico: </strong><span id="summaryEmail"></span></p>
+                    <p><strong>Mensaje: </strong><span id="summaryMessage"></span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+<!-- ---------- Aca comienza el footer ---------- -->
+<footer class="bg-dark">
+    <p>Siguenos en nuestras redes sociales: </p>
+    <a href="" class="">Facebook</a>
+    <a href="" class="">Twitter</a>
+    <a href="" class="">Instagram</a>
+</footer>
+
+
+     <!-- ---------- JS Bootstrap ---------- --> 
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+     <!-- ---------- Static JS ---------- --> 
+      <script src="./assets/js/script.js"></script>
+</body>
+</html>
